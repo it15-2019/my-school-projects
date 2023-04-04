@@ -1,0 +1,177 @@
+.title-center 
+{
+    margin: 0 auto;
+} 
+
+.profil
+{
+    width: 300px;
+    height: 400px;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.box1
+{
+    width: 300px;
+    height: 400px;
+
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+
+    text-align: left;
+}
+
+.box2
+{
+    width: 400px;
+    height: 400px;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.box3
+{
+    width: 300px;
+    height: 400px;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box4
+{
+    width: 700px;
+    height: 400px;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.profil img
+{
+    width: 200px;
+    height: 250px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+h1
+{
+    color: white;
+    font-weight: 70;
+    font-style: italic;
+    margin-right: 50px;
+    letter-spacing: 2px;
+}
+
+h2
+{
+    margin-top: 20px;
+    color: #69F0AE;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 80;
+}
+
+h3
+{
+    margin-top: 20px;
+    color: #69F0AE;
+    font-weight: 500;
+    font-style: italic;
+    text-align: left;
+
+}
+
+.drustvene-mreze img
+{
+    width: 90px;
+    height: 90px;
+}
+
+.linija
+{
+    width: 400px;
+    border-top: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.boks input
+{
+    width: 30%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 1%;
+    display: inline-block;
+}
+
+.tekst textarea
+{
+    width: 90%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 1%;
+}
+
+.sposobnosti ul li {
+    display: flex;
+    margin-bottom: 10px;
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sposobnosti ul li .vestine {
+    width: 25%;
+}
+
+.sposobnosti ul li .razvoj 
+{
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background:white;
+    position: relative;
+}
+
+.sposobnosti ul li .procenat 
+{
+    width: 15%;
+}
+
+.sposobnosti ul li .razvoj span 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:#7B1FA2;
+}
+
+.footer 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .copy 
+{
+    color: #fff;
+}

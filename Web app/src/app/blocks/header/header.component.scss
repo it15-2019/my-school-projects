@@ -1,0 +1,30 @@
+header {
+    a {
+        margin: 5px;
+    }
+    .active-link {
+        background-color: greenyellow;
+    }
+    .logo {
+        background-image: url('../../../assets/logo2.png');
+        height: 50px;
+        width: 50px;
+        vertical-align: middle;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 0.2em;
+        margin-top: 0.5em;
+    }
+    .mat-icon {
+        vertical-align: middle;
+        margin: 0 5px;
+    }
+    #menu {
+        background-color: chartreuse;
+    }
+    .header-spacer {
+        flex: 1 1 auto;
+    }
+}

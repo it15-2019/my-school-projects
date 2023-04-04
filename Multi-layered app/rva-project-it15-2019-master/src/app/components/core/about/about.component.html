@@ -1,0 +1,64 @@
+<mat-toolbar color="primary">
+    <span class="title-center">O nama</span>
+</mat-toolbar>
+
+<mat-toolbar color="accent">
+    <p class="title-center-p">Cilj projekta jeste vođenje evidencije o sistemu koji se sastoji od baze podataka o:</p>
+</mat-toolbar>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+        <img src="https://icons.veryicon.com/png/o/system/process-assessment-of-shandong-university/student-status-change.png" style="height: 300px; width: 50%; background-color: #7B1FA2;">
+        <img src="https://cdn-icons-png.flaticon.com/512/838/838674.png" style="height: 300px; width: 50%; background-color: #7B1FA2;">
+        <div class="container">
+            <h2>Statusima</h2>
+            <p>Svaki status ima svoj id, naziv i oznaku</p>
+            <button mat-raised-button color ="primary" [routerLink]="['/status']">Status</button>
+        </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Tehni%C4%8Dki_fakultet_u_Beogradu.JPG" style="height: 300px; width: 100%;">
+        <div class="container">
+            <h2>Fakultetima</h2>
+            <p>Svaki fakultet ima svoj id, naziv i sedište(lokaciju)</p>
+            <button mat-raised-button color ="primary" [routerLink]="['/fakultet']">Fakultet</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<mat-toolbar color="accent">
+    <p class="title-center-p">Druga dva entita se razlikuju od prva dva po tome što u sebi sadrže strane ključeve</p>
+</mat-toolbar>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+        <img src="https://st2.depositphotos.com/3591429/6304/i/950/depositphotos_63044999-stock-photo-group-of-people-with-different.jpg" style="height: 300px; width: 100%;">
+        <div class="container">
+            <h2>Departmanima</h2>
+            <p>Svaki fakultet ima svoj id, naziv, oznaku i fakultet(strani ključ)</p>
+            <button mat-raised-button color ="primary" [routerLink]="['/departman']">Departman</button>
+        </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+        <img src="https://media.edutopia.org/styles/responsive_2880px_16x9/s3/sites/default/files/masters/2022-01/iStock-1324921652-crop.jpg" style="height: 300px; width: 100%;">
+        <div class="container">
+            <h2>Studentima</h2>
+            <p>Svaki student ima svoj id, ime, prezime, broj indeksa, status(strani ključ) i departman(strani ključ).</p>
+            <button mat-raised-button color ="primary" [routerLink]="['/departman']">Student</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <mat-toolbar color="primary">
+        <span class="title-center">&copy; Sofija Dangubić</span>
+    </mat-toolbar>
+</footer>

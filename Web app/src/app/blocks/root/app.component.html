@@ -1,0 +1,4 @@
+<div>
+    <app-header  [user] = "user$ | async" (logoutEvent) = "logout()" class = "overflow: hidden;"></app-header>
+    <router-outlet ></router-outlet>
+</div>

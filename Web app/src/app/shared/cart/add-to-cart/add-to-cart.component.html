@@ -1,0 +1,14 @@
+
+        <span class = "atc-spacer"></span> 
+        <button mat-raised-button color = "primary" (click) = "addItemToCart()" *ngIf = "!(isItemAlreadyInCart | async)">
+            <mat-icon>
+                add_shopping_cart
+            </mat-icon>
+            <span class = "addcart-btn-t ext">Add to Cart</span>
+        </button>
+        <button mat-raised-button color = "primary" class = "btn-md" [routerLink] = "['../cart']" *ngIf = "isItemAlreadyInCart | async">
+            <mat-icon>
+                shopping_cart
+            </mat-icon>
+            <span class = "viewcart-btn-text">View in Cart</span>
+        </button>

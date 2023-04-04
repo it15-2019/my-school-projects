@@ -1,0 +1,58 @@
+.title-center 
+{
+  margin: 0 auto;
+} 
+
+.title-center-p 
+{
+  text-align: left;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.column 
+{
+  float: left;
+  width: 45%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card 
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  height: 450px;
+}
+
+.about-section 
+{
+    height: 100px;
+    text-align: center;
+    background-color: #69F0AE;
+    color: white;
+}
+
+.container 
+{
+  padding: 0 16px;
+}
+
+.container::after, .row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .copy 
+{
+  color: #fff;
+}

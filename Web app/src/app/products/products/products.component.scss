@@ -1,0 +1,27 @@
+div {
+    box-shadow: none;
+}
+.mat-table {
+    width: 100%;
+}
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+.products-listing-image {
+    height: 20em;
+    width: 20em;
+    margin-right: 2em;
+}
+.mat-raised-button {
+    margin-left: 15px
+}
+
+@media all and (max-width:699px)
+{   
+    .products-listing-image {
+        height: 9em;
+        width: 7em;
+    }
+}
+

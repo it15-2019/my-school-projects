@@ -1,0 +1,49 @@
+<mat-toolbar color="primary">
+    <span class="title-center">Fakultet</span>
+</mat-toolbar>
+
+<div class="container mat-elavation-z8">
+  <mat-form-field>
+    <input matInput placeholder="Pretraga fakulteta" (keyup)="applyFilter($event)">
+  </mat-form-field>
+  <mat-table #table [dataSource]="dataSource" class="mat-cell" matSort>
+    <!--ID-->
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef mat-sort-header style="color: #69F0AE;">ID</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.id }}</mat-cell>
+    </ng-container>
+    <!--Naziv-->
+    <ng-container matColumnDef="naziv">
+      <mat-header-cell *matHeaderCellDef mat-sort-header style="color: #69F0AE;">Naziv</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.naziv }}</mat-cell>
+    </ng-container>
+    <!-- Sediste -->
+    <ng-container matColumnDef="sediste">
+      <mat-header-cell *matHeaderCellDef mat-sort-header style="color: #69F0AE;">Sediste</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.sediste }}</mat-cell>
+    </ng-container>
+    <!-- Action Buttons -->
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>
+        <button (click) = "openDialog(1)" mat-icon-button color="primary">
+          <mat-icon>add</mat-icon>
+        </button>
+      </mat-header-cell>
+      <mat-cell *matCellDef="let row; let i = index">
+        <button (click) = "openDialog(2, row.id, row.naziv, row.sediste)"  mat-icon-button color="primary">
+          <mat-icon aria-label="Edit">edit</mat-icon>
+        </button>
+        <button (click) = "openDialog(3, row.id, row.naziv, row.sediste)" mat-icon-button color="primary">
+          <mat-icon aria-label="Delete">delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row 
+      style="cursor: pointer;" 
+      *matRowDef="let row; columns: displayedColumns">
+    </mat-row>
+  </mat-table>
+  <mat-paginator [length] = "100" [pageSize] = "5" [pageSizeOptions]="[5, 10, 25, 100]" style="color: #69F0AE;">
+  </mat-paginator>
+</div>

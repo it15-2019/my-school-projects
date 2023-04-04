@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo"
+    tools:context=".ShopDetailsActivity">
+
+
+    <!-- Shop details-->
+    <RelativeLayout
+        android:id="@+id/shopDetailsRl"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ad"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+    </RelativeLayout>
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_r1"
+        android:padding="10dp">
+
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="About us"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- About us -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shopDetailsRl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:elegantTextHeight="true"
+            android:text="GlassesShop is an American owned and operated online retailer of eyeglasses and sunglasses. Since the website launch in 2004, we have delivered over a million pairs of eyeglasses while maintaining our standard of providing the highest quality at affordable prices. Is not only user-friendly but also professional and reliable. Being able to deliver superior eyeglasses at an unbeatably-low price has allowed us to see people all over the world wearing our glasses. We guarantee your satisfaction."
+            android:textAlignment="center" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-120dp"
+            android:src="@drawable/logo" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-title>Shoppin cart</mat-card-title>
+    <mat-card-content>
+        <mat-list role = "list">
+            <mat-list-item role = "listitem">
+                <span> Items ({{cartItemsCount | async}}): </span>
+                <span class = "spacer"></span>
+                <span> ${{cartSubTotal | async}} </span>
+                <span class = "spacer"></span> 
+            </mat-list-item>
+            <mat-list-item role = "listitem">
+                <span> Shipping: </span>
+                <span class = "spacer"></span>
+                <span> {{shippingCost | async | currency}} </span>
+                <span class = "spacer"></span> 
+            </mat-list-item>
+            <mat-list-item role = "listitem">
+                <span> Estimated tax: </span>
+                <span class = "spacer"></span>
+                <span> {{estimatedTax | async | currency}} </span>
+                <span class = "spacer"></span> 
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item role = "listitem">
+                <span> Order Total: </span>
+                <span class = "spacer"></span>
+                <span class = "mat-tittle"> {{orderTotal | async | currency}} </span>
+                <span class = "spacer"></span> 
+            </mat-list-item>
+        </mat-list>
+        <button mat-button (click)="openDialog()">Submit Order</button>
+    </mat-card-content>
+</mat-card>

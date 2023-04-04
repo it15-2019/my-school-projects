@@ -1,0 +1,23 @@
+<mat-card *ngIf = "!(cartItemsCount | async)" class = "empty-cart">
+    <mat-card-content>
+        <div class = "mat-headline">
+            You don't have any items in you cart. Let's get shopping! Start shopping
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color = "primary" [routerLink] = "['../products']">
+            <mat-icon> shop </mat-icon>
+            <span> Continue Shopping! </span>
+        </button> 
+    </mat-card-actions>
+</mat-card>
+<div *ngIf = "cartItemsCount | async">
+    <mat-card class = "sc-summary">
+        <mat-card-content>
+            <app-cart-summary></app-cart-summary>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+
+

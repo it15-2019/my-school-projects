@@ -1,0 +1,23 @@
+<header>
+    <div height="100vh">
+        <mat-toolbar color = "primary">
+            <mat-toolbar-row>
+                <a class = "logo" [routerLink]="['/']"></a>
+                <div>
+                    <a mat-button routerLink="/products" routerLinkActive>Products</a>
+                </div>
+                <span class="header-spacer"></span>
+                <a *ngIf = "!user" mat-button routerLink="/auth" routerLinkActive>
+                    <mat-icon> person_outline </mat-icon> Login </a>
+                <div>
+                    <a *ngIf="user"mat-button [matMenuTriggerFor] = "menu">
+                        <mat-icon> account_circle </mat-icon> {{user.fullname}} </a>
+                    <mat-menu #menu = "matMenu" >
+                        <button style="margin-top: 5px; margin-left: 17px; color: white; background-color:rgb(119, 30, 155)"  (click) = "logoutEvent.emit()" mat-button> Logout </button>
+                    </mat-menu>
+                </div>
+                <app-cart-item-count></app-cart-item-count>
+            </mat-toolbar-row>
+        </mat-toolbar>  
+    </div>
+</header>
